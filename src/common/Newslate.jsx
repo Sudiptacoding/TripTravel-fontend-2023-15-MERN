@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Newslate = () => {
     return (
         <div className='py-32 dark:bg-gray-900'>

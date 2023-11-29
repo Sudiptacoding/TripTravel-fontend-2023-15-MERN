@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Loader = () => {
     return (
         <div className="min-h-[70vh] flex flex-col bg-white border shadow-sm rounded-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow-slate-700/[.7]">

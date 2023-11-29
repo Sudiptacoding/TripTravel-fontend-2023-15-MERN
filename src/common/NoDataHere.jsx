@@ -1,5 +1,4 @@
 import React from 'react';
-
 const NoDataHere = () => {
     return (
         <div className='flex items-center justify-center w-full py-28'>

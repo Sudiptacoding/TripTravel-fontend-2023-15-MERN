@@ -5,7 +5,7 @@ import useAxios from '../hooks/useAxios'
 import { useNavigate } from 'react-router-dom';
 
 function SearchData() {
-
+    
     const axiosData = useAxios();
     const navigate = useNavigate()
 
