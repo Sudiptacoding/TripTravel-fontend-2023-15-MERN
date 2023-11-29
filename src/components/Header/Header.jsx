@@ -68,8 +68,6 @@ const Header = () => {
                                 }
                             >Contact Us</NavLink>
 
-                            {/* End part */}
-
                             <div className="flex items-center justify-center cursor-pointer gap-x-5 sm:ml-auto">
                                 <div data-hs-overlay="#hs-overlay-top" className="flex items-center font-medium text-gray-500 gap-x-2 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-500" >
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-3.5 h-3.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
@@ -116,16 +114,12 @@ const Header = () => {
                                                         </svg>
                                                         Announcements
                                                     </Link>
-
-
-
                                                     <div onClick={handelLogOut} className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" >
                                                         <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                                                             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                                                         </svg>
                                                         Log Out
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
@@ -136,18 +130,12 @@ const Header = () => {
                                         Log in
                                     </Link>
                                 }
-
-
                             </div>
                         </div>
                     </div>
                 </nav>
             </header>
-
-
-
             {/* Search modal */}
-
             <div id="hs-overlay-top" className="hs-overlay hs-overlay-open:translate-y-0 -translate-y-full fixed top-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-[60] bg-white border-b dark:bg-gray-800 dark:border-gray-700 hidden" tabIndex="-1">
                 <div className="flex items-center justify-between px-4 py-3 border-b dark:border-gray-700">
                     <h3 className="font-bold text-gray-800 dark:text-white">
@@ -164,7 +152,6 @@ const Header = () => {
                     <SearchData></SearchData>
                 </div>
             </div>
-
         </div>
     );
 };
