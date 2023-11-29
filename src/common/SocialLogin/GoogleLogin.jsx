@@ -8,7 +8,6 @@ const GoogleLogin = () => {
     const axiosAuth = useAxios()
     const { googleSignIn } = useContext(UserProvider)
     const navigate = useNavigate()
-
     const handelGoogle = () => {
         googleSignIn()
             .then(user => {
@@ -23,7 +22,6 @@ const GoogleLogin = () => {
                         swal("Yahooo!!", `User created successfully`, "success");
                         navigate('/')
                     })
-
             }).catch(error => {
                 console.log(error)
             })
