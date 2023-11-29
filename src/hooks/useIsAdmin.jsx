@@ -2,7 +2,6 @@ import { useQuery } from "@tanstack/react-query";
 import useAuth from "./useAuth";
 import useAxios from "./useAxios";
 
-
 const useIsAdmin = () => {
     const { user, loader } = useAuth()
     const axiosData = useAxios()

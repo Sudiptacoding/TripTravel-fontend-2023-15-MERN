@@ -1,7 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import useAxios from "./useAxios";
 
-
 const useTourGuide = () => {
     const axiosData = useAxios()
     const { isPending, error, data: allTourGuide, refetch } = useQuery({
