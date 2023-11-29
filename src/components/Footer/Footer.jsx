@@ -9,13 +9,10 @@ const Footer = () => {
     return (
         <div className='card-ture dark:bg-gray-900'>
             <footer class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto dark:bg-gray-900  dark:border-none">
-
                 <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5 text-center">
                     <div>
                         <Link to='/' class="flex-none text-xl font-semibold text-black dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" aria-label="Brand"><img className='w-48' src="https://i.postimg.cc/Xq70q04N/Casssspture-removebg-preview.png" alt="" /></Link>
                     </div>
-
-
                     <ul class="text-center">
                         <li class="inline-block relative pe-8 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-gray-600">
                             <Link to='/' class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" >
@@ -66,13 +63,10 @@ const Footer = () => {
                             </svg>
                         </a>
                     </div>
-
                 </div>
-
                 <div class="text-center pt-20">
                     <p class="text-sm text-gray-400">© 2022 Preline. All rights reserved.</p>
                 </div>
-
             </footer>
         </div>
     );

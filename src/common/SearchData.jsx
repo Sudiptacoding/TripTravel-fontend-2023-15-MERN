@@ -5,10 +5,8 @@ import useAxios from '../hooks/useAxios'
 import { useNavigate } from 'react-router-dom';
 
 function SearchData() {
-    
     const axiosData = useAxios();
     const navigate = useNavigate()
-
     const [items, setItems] = useState([])
     useEffect(() => {
         axiosData.get('allservices')
@@ -37,8 +35,6 @@ function SearchData() {
     const formatResult = (item) => {
         return (
             <div className='cursor-pointer'>
-
-
                 <div >
                     <a data-tooltip-id={item?._id}><p>{item?.serviceName}</p></a>
                     <Tooltip id={item?._id}>
@@ -49,7 +45,6 @@ function SearchData() {
                         </div>
                     </Tooltip>
                 </div>
-
             </div>
         )
     }
