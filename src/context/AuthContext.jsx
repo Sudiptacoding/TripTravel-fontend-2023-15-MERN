@@ -51,15 +51,11 @@ const AuthContext = ({ children }) => {
         }
     }, [])
 
-
-
     const sendValue = {
         createUser,
         signIn,
         logOut,
         googleSignIn,
-
-        // 
         user,
         loader,
         setUserPhoto,
