@@ -8,7 +8,6 @@ import About from "../pages/About/About";
 import AdminRoot from "../layouts/Admin/AdminRoot";
 import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 
-
 import AdminProtectRouts from "../ProtectedRoute/AdminProtectRouts";
 import UsersProfile from "../pages/Users/UsersProfile";
 import UserRoot from "../layouts/User/UserRoot";
@@ -112,9 +111,6 @@ const router = createBrowserRouter([
             },
         ],
     },
-
-
-
 
     // User
     {
