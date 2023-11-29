@@ -8,7 +8,6 @@ const About = () => {
                 <title>TripsTravel | About</title>
                 <meta name="description" content="Helmet application" />
             </Helmet>
-
             <section
                 class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-gray-900"
             >
