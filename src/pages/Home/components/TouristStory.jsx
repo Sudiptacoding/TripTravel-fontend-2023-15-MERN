@@ -22,13 +22,11 @@ const TouristStory = () => {
     if (error) return 'An error has occurred: ' + error.message
     return (
         <div className='dark:bg-gray-900'>
-
             {
                 allStory?.length > 0 ?
                     <div>
                         <div className='w-[90%] mx-auto overflow-hidden'>
                             <Slider {...settings}>
-
                                 {
                                     allStory?.map((item, i) => {
                                         return <Link to={`/story/${item._id}`} key={i} class="relative w-full p-5 cursor-pointer">
@@ -37,7 +35,6 @@ const TouristStory = () => {
                                                 <div class="mx-auto text-lg italic font-bold  h-auto  text-gray-800 dark:text-gray-200">
                                                     {item?.time}
                                                 </div>
-
                                                 <div class="mt-6 lg:mt-10">
                                                     <p class="relative text-xl sm:text-2xl md:text-3xl md:leading-normal font-medium text-gray-800">
                                                         <svg class="absolute top-0 start-0 transform -translate-x-8 -translate-y-8 h-16 w-16 text-gray-200 sm:h-24 sm:w-24 dark:text-gray-700" width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -46,14 +43,12 @@ const TouristStory = () => {
                                                         <span class="relative z-10 italic text-gray-800 dark:text-gray-200">{item?.story.slice(0, 200)}.</span>
                                                     </p>
                                                 </div>
-
                                                 <footer class="mt-6">
                                                     <div class="p-4 rounded-b-xl md:px-7 ">
                                                         <div class="flex items-center justify-center">
                                                             <div class="f">
                                                                 <img class="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]" src={item?.userPhoto} alt="Image Description" />
                                                             </div>
-
                                                             <div class=" ms-3">
                                                                 <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
                                                                     {item?.userName}
@@ -66,12 +61,9 @@ const TouristStory = () => {
                                                     </div>
                                                 </footer>
                                             </blockquote>
-
                                         </Link>
-
                                     })
                                 }
-
                             </Slider>
                         </div>
                     </div>

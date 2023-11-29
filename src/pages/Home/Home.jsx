@@ -15,18 +15,9 @@ const Home = () => {
                 <meta name="description" content="Helmet application" />
             </Helmet>
             <Banner></Banner>
-            {/* Tourism and Travel Guide Section */}
             <TravelGuide></TravelGuide>
-
-            {/* Tour Type section */}
-
             <TourTypeSection></TourTypeSection>
-
-            {/* Tourist story */}
-
             <TouristStory></TouristStory>
-
-            {/* Overlay  */}
             <Overlay></Overlay>
         </div>
     );

@@ -35,8 +35,6 @@ const OurPackage = () => {
 
     }
 
-
-
     if (isPending) return <Loader></Loader>
 
     if (error) return 'An error has occurred: ' + error.message
@@ -63,7 +61,6 @@ const OurPackage = () => {
                                                             <SlHeart className='text-2xl text-white' />
                                                         </div>
                                                     }
-
                                                 </div>
                                             </div>
                                         </div>
@@ -86,8 +83,6 @@ const OurPackage = () => {
                                     </div>
                                 })
                             }
-
-
                         </div>
                     </div>
                     : <div><NoDataHere></NoDataHere></div>

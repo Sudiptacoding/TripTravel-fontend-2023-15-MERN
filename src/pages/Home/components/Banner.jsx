@@ -4,7 +4,6 @@ import 'react-slideshow-image/dist/styles.css'
 import { HiMiniArrowUturnLeft, HiMiniArrowUturnRight } from "react-icons/hi2";
 
 const Banner = () => {
-
     const divStyle = {
         display: 'flex',
         alignItems: 'center',
@@ -12,13 +11,10 @@ const Banner = () => {
         backgroundSize: 'cover',
         height: '600px'
     }
-
     const properties = {
         prevArrow: <button><HiMiniArrowUturnLeft className='text-2xl text-white' /></button>,
         nextArrow: <button><HiMiniArrowUturnRight className='text-2xl text-white' /></button>
     }
-
-
     const slideImages = [
         {
             url: 'https://images.pexels.com/photos/3776776/pexels-photo-3776776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -38,7 +34,6 @@ const Banner = () => {
         },
     ];
     return (
-
         <div className="slide-container">
             <Fade {...properties} autoplay={true}>
                 {slideImages.map((slideImage, index) => (
@@ -48,7 +43,6 @@ const Banner = () => {
                                 <div>
                                     <div class="relative overflow-hidden before:absolute before:top-0 before:start-1/2 before:bg-[url('https://preline.co/assets/svg/component/squared-bg-element.svg')] before:bg-no-repeat before:bg-top before:w-full before:h-full before:-z-[1] before:transform before:-translate-x-1/2 dark:before:bg-[url('https://preline.co/assets/svg/component/squared-bg-element-dark.svg')]">
                                         <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
-
                                             <div class="flex justify-center">
                                                 <a class="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-400">
                                                     Discover, Dream, Explore
@@ -58,19 +52,14 @@ const Banner = () => {
                                                     </span>
                                                 </a>
                                             </div>
-
                                             <div class="mt-5 lg:max-w-4xl 2xl:max-w-6xl text-center mx-auto">
                                                 <h1 class="block font-bold text-white text-4xl md:text-5xl lg:text-6xl dark:text-gray-200">
                                                     Your Gateway to Extraordinary Journeys
                                                 </h1>
                                             </div>
-
-
                                             <div class="mt-5 lg:max-w-5xl 2xl:max-w-6xl text-center mx-auto">
                                                 <p class="text-lg text-white dark:text-gray-400">Unlock the door to wanderlust and start your urban odyssey here. The capitals are calling, and we're here to guide you every step of the way. Welcome to Trips Travel, where the journey is as extraordinary as the destination.</p>
                                             </div>
-
-
                                             <div class="mt-8 gap-3 flex justify-center">
                                                 <a target='_blank' class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-4 dark:focus:ring-offset-gray-800" href="https://github.com/Sudiptacoding">
                                                     <svg class="flex-shrink-0 w-4.5 h-4.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -79,7 +68,6 @@ const Banner = () => {
                                                     Continue with Github
                                                 </a>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
