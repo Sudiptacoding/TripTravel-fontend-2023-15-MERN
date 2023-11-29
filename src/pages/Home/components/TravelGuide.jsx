@@ -20,7 +20,6 @@ const TravelGuide = () => {
                     <Tab>Our Packages</Tab>
                     <Tab>Meet Our Tour Guides</Tab>
                 </TabList>
-
                 <TabPanel>
                     <VedioContain></VedioContain>
                 </TabPanel>
