@@ -39,16 +39,14 @@ const MyBookings = () => {
         });
     }
 
-
     if (isPending) return <Loader></Loader>
-
     if (error) return 'An error has occurred: ' + error.message
     return (
         <div>
             <div className='h-screen'>
                 {
                     allbookings?.length > 0 ?
-                        <div className="py-10 lg:py-14 mx-auto">
+                        <div className="py-10 mx-auto lg:py-14">
                             <div className="flex flex-col">
                                 <div className="-m-1.5 overflow-x-auto">
                                     <div className="p-1.5 min-w-full inline-block align-middle">
@@ -126,7 +124,6 @@ const MyBookings = () => {
                                                                 </span>
                                                             </div>
                                                         </th>
-
                                                     </tr>
                                                 </thead>
                                                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -148,7 +145,6 @@ const MyBookings = () => {
                                                                         <div className="px-6 py-3 text-center">
                                                                             <span className="block text-sm font-semibold text-gray-800 dark:text-gray-200">{item?.name}</span>
                                                                         </div>
-
                                                                     </a>
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
@@ -156,20 +152,18 @@ const MyBookings = () => {
                                                                         <div className="py-3 text-center">
                                                                             <span className="block text-sm font-semibold text-gray-800 dark:text-gray-200">{item?.time}</span>
                                                                         </div>
-
                                                                     </a>
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
                                                                     <a className="block p-6" >
-                                                                        <div className=" py-3 text-center">
+                                                                        <div className="py-3 text-center ">
                                                                             <span className="block text-sm font-semibold text-gray-800 dark:text-gray-200">{item?.price} TK</span>
                                                                         </div>
-
                                                                     </a>
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
                                                                     <a className="block p-6" >
-                                                                        <div className="text-center py-3">
+                                                                        <div className="py-3 text-center">
                                                                             {
                                                                                 item?.status === 'Accepted' && <span className="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-teal-100 text-teal-800 rounded-full dark:bg-teal-500/10 dark:text-teal-500">
                                                                                     <svg className="w-2.5 h-2.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -217,8 +211,6 @@ const MyBookings = () => {
                                                                                 Cancel
                                                                             </button>
                                                                         }
-
-
                                                                     </a>
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
@@ -230,11 +222,8 @@ const MyBookings = () => {
                                                                                 Apply
                                                                             </button>
                                                                         }
-
-
                                                                     </a>
                                                                 </td>
-
                                                             </tr>
                                                         })
                                                     }
@@ -248,9 +237,6 @@ const MyBookings = () => {
                 }
             </div>
 
-
-
-
             <div id="hs-task-created-alert" class="hs-overlay hidden w-full h-full fixed top-0 start-0 z-[60] overflow-x-hidden overflow-y-auto">
                 <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-0 opacity-0 ease-out transition-all sm:max-w-lg sm:w-full m-3 sm:mx-auto">
                     <div class="relative flex flex-col bg-white shadow-lg rounded-xl dark:bg-gray-800">
@@ -260,7 +246,6 @@ const MyBookings = () => {
                                 <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
                             </button>
                         </div>
-
                         <div class="p-4 sm:p-10 text-center overflow-y-auto">
 
                             <span class="mb-4 inline-flex justify-center items-center w-[46px] h-[46px] rounded-full border-4 border-green-50 bg-green-100 text-green-500 dark:bg-green-700 dark:border-green-600 dark:text-green-100">
@@ -268,8 +253,6 @@ const MyBookings = () => {
                                     <path d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z" />
                                 </svg>
                             </span>
-
-
                             <h3 class="mb-2 text-xl font-bold text-gray-800 dark:text-gray-200">
                                 Task successfully fill up!
                             </h3>
@@ -277,7 +260,6 @@ const MyBookings = () => {
                                 Congratulations you have got 20%  discount
                             </p>
                             <Confetti />
-
                             <div class="mt-6 flex justify-center gap-x-4">
                                 <button type="button" class="py-2 px-3 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-hs-overlay="#hs-task-created-alert">
                                     Cancel
@@ -287,11 +269,6 @@ const MyBookings = () => {
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </div>
     )
 };
