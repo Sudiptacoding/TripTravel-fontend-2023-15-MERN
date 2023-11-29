@@ -15,33 +15,33 @@ const VedioContain = () => {
 
                     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                         <div>
-                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/pzs-xU4mTXg?si=kls1qKt3Sa7Q5fcA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/pzs-xU4mTXg?si=kls1qKt3Sa7Q5fcA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                         <div>
-                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/35npVaFGHMY?si=a2Dafvh2bRhg3_uK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/35npVaFGHMY?si=a2Dafvh2bRhg3_uK" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         </div>
                     </div>
 
                     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                         <div>
-                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/cZUCSSo2wQk?si=SIcLLhTHMjc7Jqet" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/cZUCSSo2wQk?si=SIcLLhTHMjc7Jqet" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                         <div>
-                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/4SHgwHpVXFE?si=0AyPWspv2hhkElCz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/4SHgwHpVXFE?si=0AyPWspv2hhkElCz" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                         <div>
-                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/q-TlYyZGOfQ?si=oDEP6j1e1qNhs1aV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/q-TlYyZGOfQ?si=oDEP6j1e1qNhs1aV" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
                         <div>
-                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/z4avWuJ9Ta8?si=D_jFPjYjwtLR5az2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe className='w-full h-[230px] rounded-lg' src="https://www.youtube.com/embed/z4avWuJ9Ta8?si=D_jFPjYjwtLR5az2" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                         </div>
                     </div>
 
