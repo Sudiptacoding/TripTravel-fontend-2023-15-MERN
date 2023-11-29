@@ -27,9 +27,6 @@ const ToureTypePage = () => {
                 {
                     allservices?.length > 0 ?
                         <div>
-
-
-
                             <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                                     {
@@ -44,7 +41,6 @@ const ToureTypePage = () => {
                                                                     <SlHeart className='text-2xl text-white' />
                                                                 </div>
                                                             }
-
                                                         </div>
                                                     </div>
                                                 </div>
@@ -67,8 +63,6 @@ const ToureTypePage = () => {
                                             </div>
                                         })
                                     }
-
-
                                 </div>
                             </div>
                         </div>

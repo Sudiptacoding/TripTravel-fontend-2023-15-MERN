@@ -14,8 +14,6 @@ const MyAssignedTour = () => {
                 refetch()
             })
     }
-
-
     if (isPending) return <Loader></Loader>
 
     if (error) return 'An error has occurred: ' + error.message
@@ -96,8 +94,6 @@ const MyAssignedTour = () => {
                                                                 </span>
                                                             </div>
                                                         </th>
-
-
                                                     </tr>
                                                 </thead>
                                                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
@@ -119,7 +115,6 @@ const MyAssignedTour = () => {
                                                                         <div className="py-3 text-center">
                                                                             <span className="block text-sm font-semibold text-gray-800 dark:text-gray-200">{item?.buyUserEmail}</span>
                                                                         </div>
-
                                                                     </a>
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
@@ -127,7 +122,6 @@ const MyAssignedTour = () => {
                                                                         <div className="py-3 text-center">
                                                                             <span className="block text-sm font-semibold text-gray-800 dark:text-gray-200">{item?.time}</span>
                                                                         </div>
-
                                                                     </a>
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
@@ -135,7 +129,6 @@ const MyAssignedTour = () => {
                                                                         <div className="py-3 text-center">
                                                                             <span className="block text-sm font-semibold text-gray-800 dark:text-gray-200">{item?.price} TK</span>
                                                                         </div>
-
                                                                     </a>
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
@@ -190,39 +183,6 @@ const MyAssignedTour = () => {
                                                                         }
                                                                     </a>
                                                                 </td>
-
-
-
-
-                                                                {/* <td className="w-px h-px align-top whitespace-nowrap">
-                                                                    <a className="block py-6">
-                                                                        {
-                                                                            item?.role === "admin" && <div className="px-6 py-3">
-                                                                                <span className="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-teal-100 text-teal-800 rounded-full dark:bg-teal-500/10 dark:text-teal-500">
-                                                                                    <svg className="w-2.5 h-2.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                                                                                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                                                                                    </svg>
-                                                                                    Admin
-                                                                                </span>
-                                                                            </div>
-                                                                        }
-                                                                        {
-                                                                            item?.role === "Tourist" && <div className="px-6 py-3">
-                                                                                <span className="inline-flex items-center px-3 py-1 text-xs font-medium text-red-800 bg-red-100 rounded-full gap-x-1 dark:bg-red-500/10 dark:text-red-500">
-                                                                                    Tourist
-                                                                                </span>
-                                                                            </div>
-                                                                        }
-                                                                        {
-                                                                            item?.role === "Tour Guide" && <div className="px-6 py-3">
-                                                                                <span className="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-yellow-100 text-yellow-800 rounded-full dark:bg-yellow-500/10 dark:text-yellow-500">
-                                                                                    Tour Guide
-                                                                                </span>
-                                                                            </div>
-                                                                        }
-                                                                    </a>
-                                                                </td> */}
-
                                                             </tr>
                                                         })
                                                     }
@@ -235,7 +195,6 @@ const MyAssignedTour = () => {
                         </div> : <div className='flex items-center justify-center w-full min-h-[70vh]'><h1 className='text-2xl font-bold dark:text-white '>Your Painding work is empty</h1></div>
                 }
             </div>
-
         </div>
     )
 };

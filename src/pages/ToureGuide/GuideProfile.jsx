@@ -43,25 +43,21 @@ const GuideProfile = () => {
                 <div className="lg:flex lg:items-center lg:-mx-10">
                     <div className="lg:w-1/2 lg:mx-10">
                         <h1 className="text-2xl font-semibold text-gray-800 capitalize dark:text-white lg:text-3xl">Let’s talk</h1>
-
                         <p className="mt-4 text-gray-500 dark:text-gray-400">
                             Ask us everything and we would love
                             to hear from you
                         </p>
-
                         <form onSubmit={handelSubmitStory} className="mt-12">
                             <div className="-mx-2 md:items-center md:flex">
                                 <div className="flex-1 px-2">
                                     <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
                                     <input disabled value={user?.displayName} type="text" placeholder="John Doe" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                 </div>
-
                                 <div className="flex-1 px-2 mt-4 md:mt-0">
                                     <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
                                     <input disabled value={user?.email} type="email" placeholder="johndoe@example.com" className="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                 </div>
                             </div>
-
                             <div className="space-y-2">
                                 <label className="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-gray-200">
                                     Tour Type
@@ -86,9 +82,6 @@ const GuideProfile = () => {
                                 </label>
                                 <input name='price' id="af-submit-app-project-name" type="number" className="block w-full px-3 py-2 text-sm border-gray-200 rounded-lg shadow-sm pr-11 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Enter Service Price" />
                             </div>
-
-
-
                             <div className="space-y-2">
                                 <label className="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-gray-200">
                                     Education & Skills
@@ -98,28 +91,23 @@ const GuideProfile = () => {
                                     <input name='skills' type="text" class="py-2 px-3 pe-11 block w-full border-gray-200 shadow-sm -mt-px -ms-px first:rounded-t-lg last:rounded-b-lg sm:first:rounded-s-lg sm:mt-0 sm:first:ms-0 sm:first:rounded-se-none sm:last:rounded-es-none sm:last:rounded-e-lg text-sm relative focus:z-10 focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Skills" />
                                 </div>
                             </div>
-
                             <div className="space-y-2">
                                 <label className="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-gray-200">
                                     Contact
                                 </label>
                                 <input name='contact' id="af-submit-app-project-name" type="number" className="block w-full px-3 py-2 text-sm border-gray-200 rounded-lg shadow-sm pr-11 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" placeholder="Enter your contact number" />
                             </div>
-
-
                             <div className="space-y-2">
                                 <label className="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-gray-200">
                                     Description
                                 </label>
                                 <textarea name='textarea' id="af-submit-app-description" className="block w-full px-3 py-2 text-sm border-gray-200 rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400" rows="6" placeholder="write your service description .."></textarea>
                             </div>
-
                             <button type='submit' className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                 get in touch
                             </button>
                         </form>
                     </div>
-
                     <div className="mt-12 lg:flex lg:mt-0 lg:flex-col lg:items-center lg:w-1/2 lg:mx-10">
                         <img className="hidden object-cover mx-auto rounded-full lg:block shrink-0 w-96 h-96" src={user?.photoURL} alt="" />
                         <div className="mt-6 space-y-8 md:mt-8">
@@ -128,7 +116,6 @@ const GuideProfile = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                 </svg>
-
                                 <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
                                     {user?.reloadUserInfo?.localId}
                                 </span>
@@ -137,22 +124,17 @@ const GuideProfile = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                                 </svg>
-
                                 <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">  {user?.reloadUserInfo?.lastRefreshAt}</span>
                             </p>
-
                             <p className="flex items-start -mx-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mx-2 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-
                                 <span className="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">{user?.email}</span>
                             </p>
                         </div>
-
                         <div className="mt-6 w-80 md:mt-8">
                             <h3 className="text-gray-600 dark:text-gray-300 ">Show User Review</h3>
-
                             {
                                 allcomment?.length > 0 ?
                                     <div class="hs-accordion-group">
@@ -172,20 +154,10 @@ const GuideProfile = () => {
                                                 </div>
                                             })
                                         }
-
-
-
-
-
                                     </div>
 
                                     : <NoDataHere></NoDataHere>
                             }
-
-
-
-
-
                         </div>
                     </div>
                 </div>
