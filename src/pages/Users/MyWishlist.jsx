@@ -4,7 +4,6 @@ import Loader from '../../common/Loader';
 import useAxios from '../../hooks/useAxios';
 import Swal from 'sweetalert2';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 const MyWishlist = () => {
     const { isPending, error, allwishlist, refetch } = useWishlist()
@@ -31,7 +30,6 @@ const MyWishlist = () => {
                         });
                         refetch();
                     })
-
             }
         });
     }
@@ -174,20 +172,16 @@ const MyWishlist = () => {
                         </div>
 
                         <div class="p-4 sm:p-10 text-center overflow-y-auto">
-
-
-
-
-                            <section className="text-gray-700 body-font overflow-hidden bg-white dark:bg-gray-900">
+                            <section className="overflow-hidden text-gray-700 bg-white body-font dark:bg-gray-900">
                                 <div className="container px-5 py-24 mx-auto">
-                                    <div className="lg:w-4/5 mx-auto flex flex-wrap">
-                                        <img alt="ecommerce" className="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src={data?.serviceImage} />
-                                        <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                                            <h2 className="text-sm title-font text-gray-500 tracking-widest dark:text-white">{data?.category} ({data?.time})</h2>
-                                            <h1 className="text-gray-900 text-3xl title-font font-medium mb-1 dark:text-white">{data?.serviceArea}</h1>
+                                    <div className="flex flex-wrap mx-auto lg:w-4/5">
+                                        <img alt="ecommerce" className="object-cover object-center w-full border border-gray-200 rounded lg:w-1/2" src={data?.serviceImage} />
+                                        <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
+                                            <h2 className="text-sm tracking-widest text-gray-500 title-font dark:text-white">{data?.category} ({data?.time})</h2>
+                                            <h1 className="mb-1 text-3xl font-medium text-gray-900 title-font dark:text-white">{data?.serviceArea}</h1>
 
                                             <p className="leading-relaxed dark:text-white">{data?.textarea}</p>
-                                            <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
+                                            <div className="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-200">
                                                 <div class="hs-accordion-group">
                                                     <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border border-transparent rounded-xl dark:hs-accordion-active:border-gray-700 dark:bg-gray-800 dark:border-transparent" id="hs-active-bordered-heading-one">
                                                         <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400" aria-controls="hs-basic-active-bordered-collapse-one">
@@ -237,9 +231,7 @@ const MyWishlist = () => {
                                             </div>
                                             <div class="flex items-center justify-between ">
                                                 <span class="title-font font-medium text-2xl text-gray-900 dark:text-white">BDT {data?.price} TK</span>
-
                                                 <span>
-
                                                     <button type="button" class="flex justify-center items-center w-7 h-7 text-sm font-semibold rounded-lg border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none dark:text-white dark:border-transparent dark:hover:bg-gray-700 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-hs-overlay="#hs-sign-out-alert">
                                                         <span class="sr-only">Close</span>
                                                         <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-yellow-100 text-yellow-800 hover:bg-yellow-200 disabled:opacity-50 disabled:pointer-events-none dark:hover:bg-yellow-900 dark:text-yellow-500 dark:hover:text-yellow-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
@@ -256,7 +248,6 @@ const MyWishlist = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     )
 
