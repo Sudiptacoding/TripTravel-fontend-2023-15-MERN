@@ -10,6 +10,7 @@ import axios from 'axios';
 import useAxios from '../../hooks/useAxios';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import GoogleLogin from '../../common/SocialLogin/GoogleLogin';
+import { Helmet } from 'react-helmet';
 
 const Registration = () => {
     const { createUser, setUserPhoto } = useContext(UserProvider)
@@ -58,8 +59,21 @@ const Registration = () => {
             return
         }
 
+        const isValidCarPassword = /^(?=.*[A-Z]).+$/.test(password);
+        const isValidSpacialPassword = /^(?=.*[A-Z])(?=.*[^A-Za-z0-9]).+$/.test(password);
+
         if (password.length < 6) {
-            return toast.error("PLease provide 6 character password")
+            toast.error("PLease provide 6 character password")
+            return
+        }
+
+        if (!isValidCarPassword) {
+            toast.error("PLease provide capital letter")
+            return
+        }
+        if (!isValidSpacialPassword) {
+            toast.error("PLease provide special character")
+            return
         }
 
         createUser(email, password)
@@ -71,7 +85,7 @@ const Registration = () => {
                     const userInfo = {
                         email: user.user.email,
                         name: user?.user?.displayName,
-                        photo:user?.user?.photoURL,
+                        photo: user?.user?.photoURL,
                         role: 'Tourist'
                     }
                     axiosAuth.post('/user', userInfo)
@@ -89,6 +103,10 @@ const Registration = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>TripsTravel | Registration</title>
+                <meta name="description" content="Helmet application" />
+            </Helmet>
             <section className="">
                 <div className="flex flex-col items-center justify-center h-screen py-10 mx-auto rounded-lg shadow sm:flex-row dark:border dark:bg-gray-800 dark:border-gray-700">
                     <Player

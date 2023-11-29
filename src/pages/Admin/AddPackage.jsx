@@ -51,8 +51,7 @@ const AddPackage = () => {
         const price = parseInt(e.target.price.value);
         const textarea = e.target.textarea.value;
         const time = moment().format("MMM Do YY");
-        const data = { serviceName, serviceArea, serviceImage, category, price, textarea, time }
-        console.log(data)
+        const data = { serviceName, serviceArea, serviceImage, category, price, textarea, time }       
         axiosData.post('/addpackage', data)
             .then(res => {
                 swal("Good job!", "You service sucessfully added!", "success");

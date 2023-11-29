@@ -10,7 +10,7 @@ const About = () => {
             </Helmet>
 
             <section
-                class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark"
+                class="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-gray-900"
             >
                 <div class="container mx-auto">
                     <div class="flex flex-wrap items-center justify-between -mx-4">

@@ -7,10 +7,7 @@ import toast from 'react-hot-toast';
 const MyAssignedTour = () => {
     const { isPending, error, allAssigntour, refetch } = useAssignToure();
     const axiosData = useAxios();
-    console.log(allAssigntour)
-
     const handelStatusChange = (status, id) => {
-        console.log(status, id)
         axiosData.patch(`/statusChange?status=${status}&id=${id}`)
             .then(res => {
                 toast.success('Status Update Successfully!')
@@ -27,7 +24,7 @@ const MyAssignedTour = () => {
             <div className='h-screen'>
                 {
                     allAssigntour?.length > 0 ?
-                        <div className="py-10 lg:py-14 mx-auto">
+                        <div className="py-10 mx-auto lg:py-14">
                             <div className="flex flex-col">
                                 <div className="-m-1.5 overflow-x-auto">
                                     <div className="p-1.5 min-w-full inline-block align-middle">
@@ -55,14 +52,14 @@ const MyAssignedTour = () => {
                                                                 </span>
                                                             </div>
                                                         </th>
-                                                        <th scope="col" className=" py-3 text-center">
+                                                        <th scope="col" className="py-3 text-center ">
                                                             <div className="flex items-center justify-center gap-x-2">
                                                                 <span className="text-xs font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-200">
                                                                     Guide
                                                                 </span>
                                                             </div>
                                                         </th>
-                                                        <th scope="col" className=" py-3 text-start">
+                                                        <th scope="col" className="py-3 text-start">
                                                             <div className="flex items-center justify-center gap-x-2">
                                                                 <span className="text-xs font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-200">
                                                                     Date
@@ -70,14 +67,14 @@ const MyAssignedTour = () => {
                                                             </div>
                                                         </th>
 
-                                                        <th scope="col" className=" py-3 text-start">
+                                                        <th scope="col" className="py-3 text-start">
                                                             <div className="flex items-center justify-center gap-x-2">
                                                                 <span className="text-xs font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-200">
                                                                     Price
                                                                 </span>
                                                             </div>
                                                         </th>
-                                                        <th scope="col" className=" py-3 text-start">
+                                                        <th scope="col" className="py-3 text-start">
                                                             <div className="flex items-center justify-center gap-x-2">
                                                                 <span className="text-xs font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-200">
                                                                     Status
@@ -85,14 +82,14 @@ const MyAssignedTour = () => {
                                                             </div>
                                                         </th>
 
-                                                        <th scope="col" className=" py-3 text-start">
+                                                        <th scope="col" className="py-3 text-start">
                                                             <div className="flex items-center justify-center gap-x-2">
                                                                 <span className="text-xs font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-200">
                                                                     Accept
                                                                 </span>
                                                             </div>
                                                         </th>
-                                                        <th scope="col" className=" py-3 text-start">
+                                                        <th scope="col" className="py-3 text-start">
                                                             <div className="flex items-center justify-center gap-x-2">
                                                                 <span className="text-xs font-semibold tracking-wide text-gray-800 uppercase dark:text-gray-200">
                                                                     Reject
@@ -119,7 +116,7 @@ const MyAssignedTour = () => {
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
                                                                     <a className="block p-6" >
-                                                                        <div className="text-center py-3">
+                                                                        <div className="py-3 text-center">
                                                                             <span className="block text-sm font-semibold text-gray-800 dark:text-gray-200">{item?.buyUserEmail}</span>
                                                                         </div>
 
@@ -127,7 +124,7 @@ const MyAssignedTour = () => {
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
                                                                     <a className="block p-6" >
-                                                                        <div className="text-center py-3">
+                                                                        <div className="py-3 text-center">
                                                                             <span className="block text-sm font-semibold text-gray-800 dark:text-gray-200">{item?.time}</span>
                                                                         </div>
 
@@ -135,7 +132,7 @@ const MyAssignedTour = () => {
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
                                                                     <a className="block p-6" >
-                                                                        <div className="text-center py-3">
+                                                                        <div className="py-3 text-center">
                                                                             <span className="block text-sm font-semibold text-gray-800 dark:text-gray-200">{item?.price} TK</span>
                                                                         </div>
 
@@ -143,7 +140,7 @@ const MyAssignedTour = () => {
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
                                                                     <a className="block p-6" >
-                                                                        <div className="text-center py-3">
+                                                                        <div className="py-3 text-center">
                                                                             {
                                                                                 item?.status === 'Accepted' && <span className="py-1 px-1.5 inline-flex items-center gap-x-1 text-xs font-medium bg-teal-100 text-teal-800 rounded-full dark:bg-teal-500/10 dark:text-teal-500">
                                                                                     <svg className="w-2.5 h-2.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -172,7 +169,7 @@ const MyAssignedTour = () => {
                                                                     </a>
                                                                 </td>
                                                                 <td className="w-px h-px align-top whitespace-nowrap">
-                                                                    <a className=" flex justify-center p-6" >
+                                                                    <a className="flex justify-center p-6 " >
                                                                         {
                                                                             item?.status !== 'Accepted' ? <button onClick={() => handelStatusChange('Accepted', item?._id)} type="button" class="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                                                                                 Accept

@@ -8,6 +8,7 @@ import swal from 'sweetalert';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import GoogleLogin from '../../common/SocialLogin/GoogleLogin';
+import { Helmet } from 'react-helmet';
 
 
 const Login = () => {
@@ -53,6 +54,10 @@ const Login = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>TripsTravel | Login</title>
+                <meta name="description" content="Helmet application" />
+            </Helmet>
             <section>
                 <div className="flex flex-col items-center justify-center h-screen py-10 mx-auto rounded-lg shadow md:flex-row lg:px-6 dark:border dark:bg-gray-800 dark:border-gray-700" >
                     <div className="w-full bg-white rounded-lg shadow-none backdrop-blur-xl lg:shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">

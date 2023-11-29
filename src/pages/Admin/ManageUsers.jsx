@@ -20,15 +20,15 @@ const ManageUsers = () => {
     if (error) return 'An error has occurred: ' + error.message
 
     return (
-        <div>
-            <div className='h-screen'>
+        <div className='dark:bg-gray-900'>
+            <div className=''>
                 {
                     alluser?.length > 0 ?
                         <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                             <div className="flex flex-col">
                                 <div className="-m-1.5 overflow-x-auto">
                                     <div className="p-1.5 min-w-full inline-block align-middle">
-                                        <div className="overflow-hidden bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700">
+                                        <div className="overflow-hidden bg-white border border-gray-200 shadow-sm dark:bg-gray-900 rounded-xl dark:bg-slate-900 dark:border-gray-700">
                                             <div className="grid gap-3 px-6 py-4 border-b border-gray-200 md:flex md:justify-between md:items-center dark:border-gray-700">
                                                 <div className="sm:col-span-1">
                                                     <label for="hs-as-table-product-review-search" className="sr-only">Search</label>

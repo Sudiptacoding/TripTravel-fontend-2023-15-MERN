@@ -20,10 +20,10 @@ const ToureTypePage = () => {
                 setAllServices(res.data)
             })
     }, [])
-    console.log(type)
+
     return (
-        <div>
-            <div className='pt-10'>
+        <div className='dark:bg-gray-900'>
+            <div className='pt-10 lg:min-h-screen '>
                 {
                     allservices?.length > 0 ?
                         <div>
