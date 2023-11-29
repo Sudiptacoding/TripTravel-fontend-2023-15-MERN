@@ -110,12 +110,12 @@ const Header = () => {
                                                             !isAdmin && !isToureGide && <NavLink to='/user-dashboard/users' >Dashboard</NavLink>
                                                         }
                                                     </div>
-                                                    <div className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" >
+                                                    <Link to='/newslate' className="flex items-center gap-x-3.5 py-2 px-3 rounded-md text-sm text-gray-800 hover:bg-gray-100 focus:ring-2 focus:ring-blue-500 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300" >
                                                         <svg className="flex-none" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                                                             <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
                                                         </svg>
                                                         Newsletter
-                                                    </div>
+                                                    </Link>
 
 
 
@@ -151,7 +151,7 @@ const Header = () => {
             <div id="hs-overlay-top" className="hs-overlay hs-overlay-open:translate-y-0 -translate-y-full fixed top-0 inset-x-0 transition-all duration-300 transform max-h-40 h-full w-full z-[60] bg-white border-b dark:bg-gray-800 dark:border-gray-700 hidden" tabIndex="-1">
                 <div className="flex items-center justify-between px-4 py-3 border-b dark:border-gray-700">
                     <h3 className="font-bold text-gray-800 dark:text-white">
-                        Search Your Item
+                        Search Your Tour place
                     </h3>
                     <button type="button" className="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-sm text-gray-500 rounded-md hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white dark:text-gray-500 dark:hover:text-gray-400 dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800" data-hs-overlay="#hs-overlay-top">
                         <span className="sr-only">Close modal</span>

@@ -10,7 +10,6 @@ import { Link } from 'react-router-dom';
 
 const TouristStory = () => {
     const { isPending, error, allStory, refetch } = useUserStory()
-    console.log(allStory)
     const settings = {
         dots: false,
         infinite: true,

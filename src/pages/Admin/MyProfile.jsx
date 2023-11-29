@@ -1,6 +1,7 @@
 import React from 'react';
 import { UserProvider } from '../../context/AuthContext';
 import { useContext } from 'react';
+import { Helmet } from 'react-helmet';
 
 
 const MyProfile = () => {
@@ -8,6 +9,10 @@ const MyProfile = () => {
 
     return (
         <div className='h-screen'>
+            <Helmet>
+                <title>TripsTravel | Admin</title>
+                <meta name="description" content="Helmet application" />
+            </Helmet>
             <div
                 className="max-w-2xl mx-4 mt-16 text-gray-900 bg-white rounded-lg shadow-xl sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto">
                 <div className="h-32 overflow-hidden rounded-t-lg">

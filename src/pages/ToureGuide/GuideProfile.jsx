@@ -4,6 +4,7 @@ import { UserProvider } from '../../context/AuthContext';
 import moment from 'moment';
 import useAxios from '../../hooks/useAxios';
 import toast from 'react-hot-toast';
+import { Helmet } from 'react-helmet';
 
 const GuideProfile = () => {
     const { user } = useContext(UserProvider)
@@ -31,6 +32,10 @@ const GuideProfile = () => {
 
     return (
         <section className="min-h-screen bg-white dark:bg-gray-900">
+            <Helmet>
+                <title>TripsTravel | TourGuide</title>
+                <meta name="description" content="Helmet application" />
+            </Helmet>
             <div className="container px-6 py-10 mx-auto">
                 <div className="lg:flex lg:items-center lg:-mx-10">
                     <div className="lg:w-1/2 lg:mx-10">

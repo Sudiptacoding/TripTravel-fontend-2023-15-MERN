@@ -14,6 +14,7 @@ import { useContext } from 'react';
 import { UserProvider } from '../../context/AuthContext';
 import ReactDatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
+import { Helmet } from 'react-helmet';
 
 const PackageDetails = () => {
     const { user } = useContext(UserProvider)
@@ -65,16 +66,21 @@ const PackageDetails = () => {
     if (error) return 'An error has occurred: ' + error.message
     return (
         <>
-            <section className="text-gray-700 body-font overflow-hidden bg-white dark:bg-gray-900">
+            <section className="overflow-hidden text-gray-700 bg-white body-font dark:bg-gray-900">
+                <Helmet>
+                    <title>TripsTravel | Details</title>
+                    <meta name="description" content="Helmet application" />
+                </Helmet>
+
                 <div className="container px-5 py-24 mx-auto">
-                    <div className="lg:w-4/5 mx-auto flex flex-wrap">
-                        <img alt="ecommerce" className="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src={data?.serviceImage} />
-                        <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                            <h2 className="text-sm title-font text-gray-500 tracking-widest dark:text-white">{data?.category} ({data?.time})</h2>
-                            <h1 className="text-gray-900 text-3xl title-font font-medium mb-1 dark:text-white">{data?.serviceArea}</h1>
+                    <div className="flex flex-wrap mx-auto lg:w-4/5">
+                        <img alt="ecommerce" className="object-cover object-center w-full border border-gray-200 rounded lg:w-1/2" src={data?.serviceImage} />
+                        <div className="w-full mt-6 lg:w-1/2 lg:pl-10 lg:py-6 lg:mt-0">
+                            <h2 className="text-sm tracking-widest text-gray-500 title-font dark:text-white">{data?.category} ({data?.time})</h2>
+                            <h1 className="mb-1 text-3xl font-medium text-gray-900 title-font dark:text-white">{data?.serviceArea}</h1>
 
                             <p className="leading-relaxed dark:text-white">{data?.textarea}</p>
-                            <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
+                            <div className="flex items-center pb-5 mt-6 mb-5 border-b-2 border-gray-200">
                                 <div class="hs-accordion-group">
                                     <div class="hs-accordion hs-accordion-active:border-gray-200 bg-white border border-transparent rounded-xl dark:hs-accordion-active:border-gray-700 dark:bg-gray-800 dark:border-transparent" id="hs-active-bordered-heading-one">
                                         <button class="hs-accordion-toggle hs-accordion-active:text-blue-600 inline-flex justify-between items-center gap-x-3 w-full font-semibold text-start text-gray-800 py-4 px-5 hover:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:hs-accordion-active:text-blue-500 dark:text-gray-200 dark:hover:text-gray-400 dark:focus:outline-none dark:focus:text-gray-400" aria-controls="hs-basic-active-bordered-collapse-one">
@@ -124,16 +130,16 @@ const PackageDetails = () => {
                             </div>
 
 
-                            <div className="space-y-2 pb-6 flex items-center gap-10">
+                            <div className="flex items-center gap-10 pb-6 space-y-2">
                                 <label className="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-gray-200">
                                     Enter Your Date
                                 </label>
-                                <ReactDatePicker className="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" selected={startDate} onChange={(date) => setStartDate(date)} />
+                                <ReactDatePicker className="block w-full px-4 py-3 text-sm border-gray-200 rounded-lg focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" selected={startDate} onChange={(date) => setStartDate(date)} />
                             </div>
 
 
 
-                            <div className="space-y-2 pb-6">
+                            <div className="pb-6 space-y-2">
                                 <label className="inline-block text-sm font-medium text-gray-800 mt-2.5 dark:text-gray-200">
                                     Tour Guide
                                 </label>

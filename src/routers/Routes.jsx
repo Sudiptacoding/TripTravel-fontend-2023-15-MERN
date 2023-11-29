@@ -28,6 +28,7 @@ import AllPackage from "../pages/AllPackage/AllPackage";
 import ToureTypePage from "../pages/ToureTypePage/ToureTypePage";
 import StoryDetails from "../pages/StoryDetails/StoryDetails";
 import AllStory from "../pages/AllStory/AllStory";
+import Newslate from "../common/Newslate";
 
 
 const router = createBrowserRouter([
@@ -50,31 +51,35 @@ const router = createBrowserRouter([
             },
             {
                 path: "about",
-                element: <About></About>,
+                element: <ProtectedRoute><About></About></ProtectedRoute>,
             },
             {
                 path: "blog",
-                element: <Blogs></Blogs>,
+                element: <ProtectedRoute><Blogs></Blogs></ProtectedRoute>,
             },
             {
                 path: "community",
-                element: <Community></Community>,
+                element: <ProtectedRoute> <Community></Community></ProtectedRoute>,
             },
             {
                 path: "packages",
-                element: <AllPackage></AllPackage>,
+                element: <ProtectedRoute><AllPackage></AllPackage></ProtectedRoute>,
             },
             {
                 path: "contract",
-                element: <Contact></Contact>,
+                element: <ProtectedRoute><Contact></Contact></ProtectedRoute>,
+            },
+            {
+                path: "newslate",
+                element: <ProtectedRoute><Newslate></Newslate></ProtectedRoute>,
             },
             {
                 path: "allStory",
-                element: <AllStory></AllStory>,
+                element: <ProtectedRoute><AllStory></AllStory></ProtectedRoute>,
             },
             {
                 path: "/tourtype/:type",
-                element: <ToureTypePage></ToureTypePage>,
+                element: <ProtectedRoute><ToureTypePage></ToureTypePage></ProtectedRoute>,
             },
             {
                 path: "/details/:id",

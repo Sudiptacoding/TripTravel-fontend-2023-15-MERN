@@ -1,18 +1,7 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
-import useAllUser from '../../../hooks/useAllUser';
-import AvatarGroup from 'react-avatar-group';
-import Loader from '../../../common/Loader';
 
 const Overlay = () => {
-    const { isPending, error, alluser, refetch } = useAllUser()
-
-    // const imageArr = alluser?.map(item => item.photo)
-
-
-    if (isPending) return <Loader></Loader>
-
-    if (error) return 'An error has occurred: ' + error.message
     return (
         <div>
             <Parallax blur={10} bgImage="https://images.pexels.com/photos/8623492/pexels-photo-8623492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" bgImageAlt="the cat" strength={200}>
