@@ -6,27 +6,20 @@ import { Link } from 'react-router-dom';
 
 const AllStory = () => {
     const { isPending, error, allStory, refetch } = useUserStory()
-    console.log(allStory)
-
     if (isPending) return <Loader></Loader>
-
     if (error) return 'An error has occurred: ' + error.message
     return (
         <div>
             {
                 allStory?.length > 0 ?
-
                     <div class="overflow-hidden bg-slate-800">
                         <div class="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-
                             <div class=" mb-6 sm:mb-10 md:mb-16 text-center pt-20">http://localhost:5173/story/6561a9da72e19c926df8b08d
                                 <h2 class="text-2xl sm:text-3xl lg:text-4xl text-white font-semibold">
                                     All Tourist Story Bellow.
                                 </h2>
                             </div>
-
                             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
                                 {
                                     allStory?.map((item, i) => {
                                         return <Link to={`/story/${item._id}`} class="flex h-auto">
@@ -39,13 +32,11 @@ const AllStory = () => {
                                                         " {item?.story?.slice(0, 100)}"
                                                     </p>
                                                 </div>
-
                                                 <div class="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-slate-700">
                                                     <div class="flex items-center">
                                                         <div class="flex-shrink-0">
                                                             <img class="h-8 w-8 rounded-full sm:h-[2.875rem] sm:w-[2.875rem]" src={item?.userPhoto} alt="Image Description" />
                                                         </div>
-
                                                         <div class="grow ms-3">
                                                             <p class="text-sm sm:text-base font-semibold text-gray-800 dark:text-gray-200">
                                                                 {item?.userName}
@@ -69,7 +60,6 @@ const AllStory = () => {
                                     <path d="M447.448 0.194357C439.203 -0.605554 431.87 5.43034 431.07 13.6759L418.035 148.045C417.235 156.291 423.271 163.623 431.516 164.423C439.762 165.223 447.095 159.187 447.895 150.942L459.482 31.5025L578.921 43.0895C587.166 43.8894 594.499 37.8535 595.299 29.6079C596.099 21.3624 590.063 14.0296 581.818 13.2297L447.448 0.194357ZM1086.03 431.727C1089.68 439.166 1098.66 442.239 1106.1 438.593C1113.54 434.946 1116.62 425.96 1112.97 418.521L1086.03 431.727ZM434.419 24.6572C449.463 42.934 474.586 81.0463 521.375 116.908C568.556 153.07 637.546 187.063 742.018 200.993L745.982 171.256C646.454 157.985 582.444 125.917 539.625 93.0974C496.414 59.978 474.537 26.1903 457.581 5.59138L434.419 24.6572ZM742.018 200.993C939.862 227.372 1054.15 366.703 1086.03 431.727L1112.97 418.521C1077.85 346.879 956.138 199.277 745.982 171.256L742.018 200.993Z" fill="currentColor" class="fill-white" />
                                 </svg>
                             </div>
-
                         </div>
                     </div>
 
