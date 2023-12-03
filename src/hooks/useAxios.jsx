@@ -3,7 +3,7 @@ import { signOut } from 'firebase/auth';
 import auth from '../firebase/firebase.config';
 
 const instance = axios.create({
-    baseURL: 'https://backend-lac-nine.vercel.app',
+    baseURL: 'https://trip-travel-backend.vercel.app',
 });
 
 const useAxios = () => {
