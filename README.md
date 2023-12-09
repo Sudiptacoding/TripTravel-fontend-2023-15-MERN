@@ -17,3 +17,37 @@
 - Our website is fully responsive, you can access our website from any device, moreover, our website has dark ad to enhance your beauty, you can view our website in any way you want, it is a completely user friendly website.
 
 
+Uses Packages
+- animate.css
+    - aos
+    - firebase
+    - localforage
+    - match-sorter
+    - react
+    - react-dom
+    - react-hot-toast
+    - react-icons
+    - react-router-dom
+    - react-simple-typewriter
+    - react-slideshow-image
+    - sweetalert2
+    - react-share
+    - react-animated-slider
+    - react-avatar-group
+    - react-confetti
+    - react-datepicker
+    - react-headroom
+    - react-helmet
+    - react-modal
+    - react-hot-toast
+    - react-parallax
+    - react-search-autocomplete
+    - react-slick
+    - react-star-ratings
+    - react-slideshow-image
+    - react-tabs
+    - slick-carousel
+    - react-tooltip
+    - framer-motion
+
+
