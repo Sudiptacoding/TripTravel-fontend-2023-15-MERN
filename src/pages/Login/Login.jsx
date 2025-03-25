@@ -9,6 +9,7 @@ import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
 import GoogleLogin from '../../common/SocialLogin/GoogleLogin';
 import { Helmet } from 'react-helmet';
+import { FaRegCopy } from 'react-icons/fa';
 
 
 const Login = () => {
@@ -52,6 +53,23 @@ const Login = () => {
         }
     }
 
+
+    const handleCopy = (text) => {
+        navigator.clipboard.writeText(text);
+        toast.success(`Copied: ${text}`, {
+            duration: 2000,
+            position: "top-right",
+        });
+    };
+
+    const users = [
+        { role: "Admin Login", email: "sudiptabiswas506@gmail.com", password: "123456" },
+        { role: "Tour Guide", email: "avi@gmail.com", password: "Avi@gmail.com" },
+        { role: "Tourist", email: "tanvir@gmail.com", password: "Tanvir@gmail.com" },
+    ];
+
+
+
     return (
         <div>
             <Helmet>
@@ -59,13 +77,44 @@ const Login = () => {
                 <meta name="description" content="Helmet application" />
             </Helmet>
             <section>
-                <div className="flex flex-col items-center justify-center h-screen py-10 mx-auto rounded-lg shadow md:flex-row lg:px-6 dark:border dark:bg-gray-800 dark:border-gray-700" >
+                <div className="flex flex-col items-center justify-center h-fit py-10 mx-auto rounded-lg shadow md:flex-row lg:px-6 dark:border dark:bg-gray-800 dark:border-gray-700" >
                     <div className="w-full bg-white rounded-lg shadow-none backdrop-blur-xl lg:shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
                         <div className="space-y-4 p-7 lg:p-6 md:space-y-6">
                             <h1 className="text-xl font-bold leading-tight tracking-tight text-center text-gray-900 md:text-2xl dark:text-white">
-                                Sign in to your account
+                               
                             </h1>
-                            <GoogleLogin></GoogleLogin>
+                            {/* <GoogleLogin></GoogleLogin> */}
+                            <div className="bg-gray-100 p-6 rounded-lg shadow-md text-center max-w-md mx-auto">
+                           
+
+                                {users.map((user, index) => (
+                                    <div key={index} className="mb-6">
+                                        <p className="text-2xl font-bold text-gray-800 drop-shadow-md">{user.role}</p>
+
+                                        <div className="flex items-center justify-between bg-white p-3 rounded-md mt-2 shadow-sm">
+                                            <h5 className="text-lg font-semibold text-gray-700">
+                                                Email: <span className="text-blue-600">{user.email}</span>
+                                            </h5>
+                                            <FaRegCopy
+                                                className="text-gray-500 cursor-pointer hover:text-blue-600 transition-all"
+                                                onClick={() => handleCopy(user.email)}
+                                            />
+                                        </div>
+
+                                        <div className="flex items-center justify-between bg-white p-3 rounded-md mt-2 shadow-sm">
+                                            <h6 className="text-md text-gray-600">
+                                                Password: <span className="text-red-500">{user.password}</span>
+                                            </h6>
+                                            <FaRegCopy
+                                                className="text-gray-500 cursor-pointer hover:text-red-500 transition-all"
+                                                onClick={() => handleCopy(user.password)}
+                                            />
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+
                             <form onSubmit={handelLogin} className="space-y-4 md:space-y-6" action="#">
                                 <div>
                                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>

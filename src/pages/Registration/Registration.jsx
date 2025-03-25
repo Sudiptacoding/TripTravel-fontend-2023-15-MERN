@@ -20,7 +20,7 @@ const Registration = () => {
     const navigate = useNavigate()
 
     const handelFileData = (e) => {
-        const imgbbApiKey = '48262f7096c971f7f2f1b695ae2a6be0';
+        const imgbbApiKey = '9d5e814c7c5f4867978ca6169e144b8b';
         const selectedFile = e.target.files[0];
         const inputType = selectedFile.type.split('/')[1];
         if (inputType !== 'png' && inputType !== 'jpeg') {
@@ -108,7 +108,7 @@ const Registration = () => {
                 <meta name="description" content="Helmet application" />
             </Helmet>
             <section className="">
-                <div className="flex flex-col items-center justify-center h-screen py-10 mx-auto rounded-lg shadow sm:flex-row dark:border dark:bg-gray-800 dark:border-gray-700">
+                <div className="flex flex-col items-center justify-center h-fit py-10 mx-auto rounded-lg shadow sm:flex-row dark:border dark:bg-gray-800 dark:border-gray-700">
                     <Player
                         autoplay
                         loop
@@ -122,7 +122,8 @@ const Registration = () => {
                             <h1 className="text-xl font-bold leading-tight tracking-tight text-center text-gray-900 md:text-2xl dark:text-white">
                                 Create your Free Account
                             </h1>
-                            <GoogleLogin></GoogleLogin>
+                            {/* <GoogleLogin></GoogleLogin> */}
+                     
                             <form onSubmit={handelRegistration} className="space-y-4 md:space-y-6" action="#">
                                 <div>
                                     <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your Name</label>

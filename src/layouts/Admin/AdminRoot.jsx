@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header';
 
 import { GiPlagueDoctorProfile } from "react-icons/gi";
 import { GoPackageDependencies } from "react-icons/go";
-import { FaUserInjured } from "react-icons/fa";
+import { FaUserInjured, FaWrench } from "react-icons/fa";
 
 const AdminRoot = () => {
     return (
@@ -74,6 +74,18 @@ const AdminRoot = () => {
                                     >
                                         <FaUserInjured />
                                         Manage Users
+                                    </NavLink>
+                                </li>
+                                <li>
+                                    <NavLink
+                                        className={({ isActive, isPending }) =>
+                                            isPending ? "pending" : isActive ? "flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-slate-700 rounded-lg hover:bg-gray-100 dark:bg-gray-900 dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" : "flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-lg hover:bg-gray-100 dark:bg-gray-900 dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+                                        }
+                                        to='/admin-dashboard/manageservice'
+
+                                    >
+                                        <FaWrench className="text-blue-500" />
+                                        Manage Service
                                     </NavLink>
                                 </li>
 

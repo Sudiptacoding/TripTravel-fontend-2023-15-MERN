@@ -28,6 +28,7 @@ import ToureTypePage from "../pages/ToureTypePage/ToureTypePage";
 import StoryDetails from "../pages/StoryDetails/StoryDetails";
 import AllStory from "../pages/AllStory/AllStory";
 import Newslate from "../common/Newslate";
+import ManageService from "../pages/Admin/ManageService";
 
 
 const router = createBrowserRouter([
@@ -108,6 +109,10 @@ const router = createBrowserRouter([
             {
                 path: "manageusers",
                 element: <AdminProtectRouts><ManageUsers></ManageUsers></AdminProtectRouts>
+            },
+            {
+                path: "manageservice",
+                element: <AdminProtectRouts><ManageService></ManageService></AdminProtectRouts>
             },
         ],
     },

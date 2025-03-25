@@ -18,7 +18,7 @@ const AddPackage = () => {
     const [showImgLode, setShowImageLode] = useState(false)
     const uploadImageToImgBB = () => {
         setShowImageLode(false)
-        const imgbbApiKey = '48262f7096c971f7f2f1b695ae2a6be0';
+        const imgbbApiKey = '9d5e814c7c5f4867978ca6169e144b8b';
         const fileInput = document.getElementById('fileInput');
         const selectedFile = fileInput.files[0];
         const formData = new FormData();
